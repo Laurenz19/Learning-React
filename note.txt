@@ -1,0 +1,44 @@
+Notion de Reactjs:
+
+1- Les composants:
+Les composants permettent de découper l'interface utilisateur en élément indépendant et réutilisable.
+
+App.js (composant parent)=> tout les composants react sont regroupés dans ce composant.
+
+Composant javascript qui est codé en ES6
+
+Class App extends Component{}
+=> c'est un composant codé dans un fichier js
+dans cette class App qui va retourner quelque chose (emplacement où on met tout les composants)
+
+Class App extends Component {
+	render() {
+		return ( //Return children component here )
+	}
+}
+
+Composant imbriqué (nested component)
+Class App extends Component {
+	render() {
+		return ( 
+		  <Menu>
+		  	<Logo/>
+			<Nav/>	
+		  </Menu>
+		  <Aside/>
+		  <Article/>
+		  <Footer/>
+		)
+	}
+}
+
+Dans React on a deux types de composants:
+- Fonction
+- Classe
+
+Ce deuxième type de composant est utile dans le cas où nous souhaitons emmagasiner des données localement afin de les exploités.
+On va les mettre dans un objet appelé State.
+
+
+
+
